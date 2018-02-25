@@ -1,0 +1,12 @@
+{
+    "name": "Simple Demographics Survey",
+    "template":"survey",
+    "url":"https://www.github.com/earcanal/simple-demographics-survey-2",
+    "exp_id": "simple-demographics-survey-2",
+    "contributors": [ "Paul Sharpe" ],
+    "time": 1,
+    "reference": ["N/A"],
+    "description": "Collect some basic demographics",
+    "instructions": "Please answer the questions to the best of your ability."
+}
+
