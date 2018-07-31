@@ -31,38 +31,38 @@
 
 <form name="questions" action="#", method="POST">
 <div class="step">
-<h3>Welcome to this survey. Press <strong>Next</strong> to begin.</h3><br><br><br><br></div>
-<div class="step">
 <h3>Please answer the following demographics questions.</h3><br><br><br><br></div>
 <div class="step">
-<p id="simple-demographics-survey-2_2_options">What was your assigned sex at birth?</p>
-<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-simple-demographics-survey-2_2_0">
-<input type="radio" id="option-simple-demographics-survey-2_2_0" class="mdl-radio__button required page3" name="simple-demographics-survey-2_2_options" value="0" meta-options="Male|Female" meta-text="What was your assigned sex at birth?">
+<p id="simple-demographics-survey-2_1_options">What was your assigned sex at birth?</p>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-simple-demographics-survey-2_1_0">
+<input type="radio" id="option-simple-demographics-survey-2_1_0" class="mdl-radio__button required page2" name="simple-demographics-survey-2_1_options" value="0" meta-options="Male|Female" meta-text="What was your assigned sex at birth?">
 <span class="mdl-radio__label">Male</span>
 </label>
-<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-simple-demographics-survey-2_2_1">
-<input type="radio" id="option-simple-demographics-survey-2_2_1" class="mdl-radio__button required page3" name="simple-demographics-survey-2_2_options" value="1" meta-options="Male|Female" meta-text="What was your assigned sex at birth?">
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-simple-demographics-survey-2_1_1">
+<input type="radio" id="option-simple-demographics-survey-2_1_1" class="mdl-radio__button required page2" name="simple-demographics-survey-2_1_options" value="1" meta-options="Male|Female" meta-text="What was your assigned sex at birth?">
 <span class="mdl-radio__label">Female</span>
 </label><br><br><br><br>
-<p id="simple-demographics-survey-2_3">How old are you (in years)?</p>
+<p id="simple-demographics-survey-2_2">How old are you (in years)?</p>
 <div class="mdl-textfield mdl-js-textfield">
-<input class="mdl-textfield__input page3 required" type="number" id="simple-demographics-survey-2_3" name="simple-demographics-survey-2_3" meta-text="How old are you (in years)?">
-<label class="mdl-textfield__label" for="simple-demographics-survey-2_3"></label>
+<input class="mdl-textfield__input page2 required" type="number" id="simple-demographics-survey-2_2" name="simple-demographics-survey-2_2" meta-text="How old are you (in years)?">
+<label class="mdl-textfield__label" for="simple-demographics-survey-2_2"></label>
 <span class="mdl-textfield__error">Input is not a number!</span>
 </div><br><br><br>
-<p id="simple-demographics-survey-2_4_options">Which is your dominant hand?</p>
-<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-simple-demographics-survey-2_4_0">
-<input type="checkbox" id="checkbox-simple-demographics-survey-2_4_0" meta-options="Left|Right|Ambidextrous" meta-text="Which is your dominant hand?" class="mdl-checkbox__input page3 required" name="simple-demographics-survey-2_4_0_options" value="Left">
+<p id="simple-demographics-survey-2_3_options">Which is your dominant hand?</p>
+<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-simple-demographics-survey-2_3_0">
+<input type="checkbox" id="checkbox-simple-demographics-survey-2_3_0" meta-options="Left|Right|Ambidextrous" meta-text="Which is your dominant hand?" class="mdl-checkbox__input page2 required" name="simple-demographics-survey-2_3_0_options" value="Left">
 <span class="mdl-checkbox__label">Left</span>
 </label>
-<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-simple-demographics-survey-2_4_1">
-<input type="checkbox" id="checkbox-simple-demographics-survey-2_4_1" meta-options="Left|Right|Ambidextrous" meta-text="Which is your dominant hand?" class="mdl-checkbox__input page3 required" name="simple-demographics-survey-2_4_1_options" value="Right">
+<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-simple-demographics-survey-2_3_1">
+<input type="checkbox" id="checkbox-simple-demographics-survey-2_3_1" meta-options="Left|Right|Ambidextrous" meta-text="Which is your dominant hand?" class="mdl-checkbox__input page2 required" name="simple-demographics-survey-2_3_1_options" value="Right">
 <span class="mdl-checkbox__label">Right</span>
 </label>
-<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-simple-demographics-survey-2_4_2">
-<input type="checkbox" id="checkbox-simple-demographics-survey-2_4_2" meta-options="Left|Right|Ambidextrous" meta-text="Which is your dominant hand?" class="mdl-checkbox__input page3 required" name="simple-demographics-survey-2_4_2_options" value="Ambidextrous">
+<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-simple-demographics-survey-2_3_2">
+<input type="checkbox" id="checkbox-simple-demographics-survey-2_3_2" meta-options="Left|Right|Ambidextrous" meta-text="Which is your dominant hand?" class="mdl-checkbox__input page2 required" name="simple-demographics-survey-2_3_2_options" value="Ambidextrous">
 <span class="mdl-checkbox__label">Ambidextrous</span>
 </label><br><br><br></div>
+<div class="step">
+<h3>Thank you.  Press "Finish" to continue.</h3><br><br><br><br></div>
 
 <div class="navigation">
     <ul class="clearfix">
@@ -110,9 +110,9 @@ $( document ).ready(function() {
                 }
             }
 
-             if ( state.stepIndex === 3 ) {
- if (($.unique($(`.page3.required[type=number],.page3.required:text`).map(function(){return $(this).attr(`meta-text`)})).map(function() {return $(`[meta-text*="` + this + `"].required[type=number], [meta-text*="` + this + `"].required:text`).filter(function() { return $(this).val();}).length > 0}).get().indexOf(false) != -1) || ($.unique($(`.page3.required:not([type=number]):not(:text)`).map(function(){return $(this).attr(`meta-text`)})).map(function() {return $(`[meta-text*="` + this + `"].required:checked`).length > 0}).get().indexOf(false) != -1)){
-is_required($(`.page3.required:not(checked)`));
+             if ( state.stepIndex === 2 ) {
+ if (($.unique($(`.page2.required[type=number],.page2.required:text`).map(function(){return $(this).attr(`meta-text`)})).map(function() {return $(`[meta-text*="` + this + `"].required[type=number], [meta-text*="` + this + `"].required:text`).filter(function() { return $(this).val();}).length > 0}).get().indexOf(false) != -1) || ($.unique($(`.page2.required:not([type=number]):not(:text)`).map(function(){return $(this).attr(`meta-text`)})).map(function() {return $(`[meta-text*="` + this + `"].required:checked`).length > 0}).get().indexOf(false) != -1)){
+is_required($(`.page2.required:not(checked)`));
 return false;
  } else {
 expfactory_finished=true;
