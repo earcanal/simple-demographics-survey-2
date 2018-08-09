@@ -1,6 +1,6 @@
 question_type	question_text	required	page_number	option_text	option_values
 instruction	Please answer the following demographics questions.	0	1
-radio	What was your assigned sex at birth?	1	2	Male,Female	0,1
-numeric	How old are you (in years)?	1	2
-checkbox	Which is your dominant hand?	1	2	Left,Right,Ambidextrous	1,2,3
-instruction	Thank you.  Press <strong>Finish</strong> to continue.	0	3
+radio	What was your assigned sex at birth?	1	1	Male,Female	0,1
+numeric	How old are you (in years)?	1	1
+checkbox	Which is your dominant hand?	1	1	Left,Right,Ambidextrous	1,2,3
+instruction	Thank you.  Press <strong>Finish</strong> to continue.	0	2
